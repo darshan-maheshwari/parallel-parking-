@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.instructions {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.parking-area {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #333;
+    background: #f3f4f6;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.parking-spot {
+    width: 120px;
+    height: 60px;
+    background: rgba(0, 255, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    border: 2px dashed #00ff00;
+    border-radius: 5px;
+}
+
+.car {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    transition: top 0.2s, left 0.2s;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
